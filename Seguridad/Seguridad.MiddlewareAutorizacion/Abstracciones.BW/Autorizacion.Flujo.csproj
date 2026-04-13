@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>2.0.6</Version>
+    <Version>1.0.1</Version>
     <PackageId>Autorizacion.Flujo.RehamAljammal</PackageId>
     <Authors>RehamAljammal</Authors>
     <Description>Lógica de negocio del paquete de autorización. Agrega perfiles del usuario como claims al ClaimsPrincipal</Description>
