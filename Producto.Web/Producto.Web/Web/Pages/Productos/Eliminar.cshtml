@@ -1,0 +1,69 @@
+﻿@page
+@model Web.Pages.Productos.EliminarModel
+@{
+}
+<header class="subhead">
+    <div class="container">
+        <div class="masthead-subheading">SC-701: Programación Web Avanzada</div>
+        <div class="masthead-heading text-uppercase">Eliminar producto</div>
+    </div>
+</header>
+
+<section class="page-section bg-light" id="principal">
+    <div class="container">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Eliminar producto</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+
+            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto ">
+                <form method="post">
+
+                    <row>
+                        <dt>@Html.DisplayNameFor(model => model.producto.Nombre):</dt>
+                        <dd>@Html.DisplayFor(model => model.producto.Nombre)</dd>
+                    </row>
+
+                    <row>
+                        <dt>@Html.DisplayNameFor(model => model.producto.Descripcion):</dt>
+                        <dd>@Html.DisplayFor(model => model.producto.Descripcion)</dd>
+                    </row>
+
+                    <row>
+                        <dt>@Html.DisplayNameFor(model => model.producto.Precio):</dt>
+                        <dd>@Html.DisplayFor(model => model.producto.Precio)</dd>
+                    </row>
+
+                    <row>
+                        <dt>@Html.DisplayNameFor(model => model.producto.Stock):</dt>
+                        <dd>@Html.DisplayFor(model => model.producto.Stock)</dd>
+                    </row>
+
+                    <row>
+                        <dt>@Html.DisplayNameFor(model => model.producto.CodigoBarras):</dt>
+                        <dd>@Html.DisplayFor(model => model.producto.CodigoBarras)</dd>
+                    </row>
+
+                    <row>
+                        <dt>SubCategoría:</dt>
+                        <dd>@Html.DisplayFor(model => model.producto.SubCategoria)</dd>
+                    </row>
+
+                    <row>
+                        <dt>Categoría:</dt>
+                        <dd>@Html.DisplayFor(model => model.producto.Categoria)</dd>
+                    </row>
+
+                    <div class="form-group">
+                        <a class="btn btn-primary" asp-page="./Index">Cancelar</a>
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </div>
+
+                    <input type="hidden" asp-for="producto.Id" />
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
